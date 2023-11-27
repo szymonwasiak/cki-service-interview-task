@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.circlek'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:2.41.0'
+    testImplementation 'org.testng:testng:7.8.0'
+}
+
+test {
+    useTestNG()
+}
